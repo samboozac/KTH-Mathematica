@@ -1,0 +1,101 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3008,         93]
+NotebookOptionsPosition[      2313,         74]
+NotebookOutlinePosition[      2656,         89]
+CellTagsIndexPosition[      2613,         86]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Bretcher Ch.3", "Text",
+ CellChangeTimes->{{3.7338160444762783`*^9, 
+  3.7338160518260136`*^9}},ExpressionUUID->"6514f5c9-2c0a-47ab-b6d3-\
+989f1fbf7e6f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"m", "=", " ", GridBox[{
+    {"2", "4", "8"},
+    {"4", "5", "1"},
+    {"7", "9", "3"}
+   }]}], "\[IndentingNewLine]", 
+ RowBox[{"RowReduce", "[", "m", "]"}]}], "Input",
+ CellChangeTimes->{{3.733816058725113*^9, 3.7338161143449197`*^9}, {
+  3.7362352440727243`*^9, 3.736235296572004*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"f5922f17-35ce-4d3f-b48e-42b4396a2a76"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4", ",", "8"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "5", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "9", ",", "3"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7338161153235426`*^9, {3.736235274030334*^9, 3.736235296962393*^9}},
+ CellLabel->"Out[9]=",ExpressionUUID->"db15aef3-e6e7-4802-a20c-5e75b05d4941"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", 
+     RowBox[{"-", "6"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7338161153235426`*^9, {3.736235274030334*^9, 3.736235296962393*^9}},
+ CellLabel->"Out[10]=",ExpressionUUID->"7797fad6-e26a-4086-85f6-2bebad40cc09"]
+}, Open  ]],
+
+Cell["\<\
+Yes, the vector {0,0,0} is REDUNDAN. It can be created by a linear \
+combination of the other two vectors (Scalar 0). \
+\>", "Text",
+ CellChangeTimes->{{3.7338161319237347`*^9, 
+  3.7338162218856735`*^9}},ExpressionUUID->"aee5824b-47be-4e2b-a12e-\
+fd01f1ada2b6"]
+},
+WindowSize->{759, 533},
+WindowMargins->{{Automatic, 252}, {24, Automatic}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 159, 3, 34, "Text",ExpressionUUID->"6514f5c9-2c0a-47ab-b6d3-989f1fbf7e6f"],
+Cell[CellGroupData[{
+Cell[742, 27, 390, 9, 84, "Input",ExpressionUUID->"f5922f17-35ce-4d3f-b48e-42b4396a2a76"],
+Cell[1135, 38, 431, 11, 32, "Output",ExpressionUUID->"db15aef3-e6e7-4802-a20c-5e75b05d4941"],
+Cell[1569, 51, 453, 12, 32, "Output",ExpressionUUID->"7797fad6-e26a-4086-85f6-2bebad40cc09"]
+}, Open  ]],
+Cell[2037, 66, 272, 6, 56, "Text",ExpressionUUID->"aee5824b-47be-4e2b-a12e-fd01f1ada2b6"]
+}
+]
+*)
+

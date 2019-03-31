@@ -1,0 +1,208 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8079,        200]
+NotebookOptionsPosition[      6819,        175]
+NotebookOutlinePosition[      7162,        190]
+CellTagsIndexPosition[      7119,        187]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Adam\[CloseCurlyQuote]s (s.580, fig 10.22) ", "Text",
+ CellChangeTimes->{{3.733759145032234*^9, 
+  3.7337592112497416`*^9}},ExpressionUUID->"8c410f4d-d30d-4727-961a-\
+4b65cb43ba0a"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"origo", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "1", ",", "2"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4", ",", "3"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"c", "=", 
+  RowBox[{"Cross", "[", 
+   RowBox[{"b", ",", "a"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Norm", "[", "c", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Arrow", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"origo", ",", "a"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"origo", ",", "b"}], "}"}]}], "}"}], "]"}], ",", "Red", ",", 
+     RowBox[{"Arrow", "[", 
+      RowBox[{"{", 
+       RowBox[{"origo", ",", "c"}], "}"}], "]"}]}], "}"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.733758390992627*^9, 3.7337584925103736`*^9}, {
+   3.73375860108895*^9, 3.733758660513198*^9}, {3.7337586920480723`*^9, 
+   3.7337587609878488`*^9}, {3.73375881227596*^9, 3.7337589134232645`*^9}, 
+   3.733759020550765*^9, {3.7337590820774155`*^9, 3.7337590900552855`*^9}, {
+   3.7337591307844744`*^9, 3.7337591318007436`*^9}},
+ CellLabel->
+  "In[100]:=",ExpressionUUID->"a3df9fcf-9135-4cff-b923-88c210e00625"],
+
+Cell["\<\
+Setting up the starting vectors a and b. Assigning the cross product of those \
+to variable c. \
+\>", "Text",
+ CellChangeTimes->{{3.736231748669726*^9, 3.7362317757467184`*^9}, {
+   3.7362318110584507`*^9, 3.7362318116678314`*^9}, 
+   3.7362319653020163`*^9},ExpressionUUID->"e8f42127-ada0-4995-8597-\
+8722200cf00b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"5", ",", "2", ",", 
+   RowBox[{"-", "6"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7337584484275537`*^9, {3.7337584841813583`*^9, 3.733758502402046*^9}, 
+   3.7337586013895073`*^9, {3.7337586341033163`*^9, 3.733758656640461*^9}, 
+   3.7337587114849396`*^9, {3.7337587460389204`*^9, 3.733758761451471*^9}, {
+   3.733758843394339*^9, 3.733758898178364*^9}, {3.733759009469116*^9, 
+   3.7337590209512777`*^9}, {3.7337590870359497`*^9, 3.7337590904871798`*^9}, 
+   3.7337591324859085`*^9},
+ CellLabel->
+  "Out[103]=",ExpressionUUID->"835188c4-4929-4b91-aa8e-36ca4bf56aa8"],
+
+Cell[BoxData[
+ SqrtBox["65"]], "Output",
+ CellChangeTimes->{
+  3.7337584484275537`*^9, {3.7337584841813583`*^9, 3.733758502402046*^9}, 
+   3.7337586013895073`*^9, {3.7337586341033163`*^9, 3.733758656640461*^9}, 
+   3.7337587114849396`*^9, {3.7337587460389204`*^9, 3.733758761451471*^9}, {
+   3.733758843394339*^9, 3.733758898178364*^9}, {3.733759009469116*^9, 
+   3.7337590209512777`*^9}, {3.7337590870359497`*^9, 3.7337590904871798`*^9}, 
+   3.7337591324859085`*^9},
+ CellLabel->
+  "Out[104]=",ExpressionUUID->"cc8f5a99-6dfb-4757-99eb-d8d70b5b8958"],
+
+Cell[BoxData[
+ Graphics3DBox[{Arrow3DBox[{{{0, 0, 0}, {2, 1, 2}}, {{0, 0, 0}, {2, 4, 3}}}], 
+   {RGBColor[1, 0, 0], Arrow3DBox[{{0, 0, 0}, {5, 2, -6}}]}},
+  Axes->True,
+  ImageSize->{390.7769770503144, 506.5128085640208},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{1.4506823338795138`, 2.768604985859328, -1.2962820674701767`},
+  ViewVertical->{0.1125904831090928, 
+   1.1620849707197607`, -0.854010299407836}]], "Output",
+ CellChangeTimes->{
+  3.7337584484275537`*^9, {3.7337584841813583`*^9, 3.733758502402046*^9}, 
+   3.7337586013895073`*^9, {3.7337586341033163`*^9, 3.733758656640461*^9}, 
+   3.7337587114849396`*^9, {3.7337587460389204`*^9, 3.733758761451471*^9}, {
+   3.733758843394339*^9, 3.733758898178364*^9}, {3.733759009469116*^9, 
+   3.7337590209512777`*^9}, {3.7337590870359497`*^9, 3.7337590904871798`*^9}, 
+   3.733759132501536*^9},
+ CellLabel->
+  "Out[105]=",ExpressionUUID->"d68472e4-7f65-42ca-84fd-7eb9e8b52a55"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7337587979302797`*^9, 3.733758799380595*^9}, {
+  3.733758838188551*^9, 
+  3.733758840954894*^9}},ExpressionUUID->"715b8dd4-c1df-44a6-9961-\
+c9b0b9dba60b"],
+
+Cell["Testing the angle-cross product relationship:", "Text",
+ CellChangeTimes->{{3.733761131616642*^9, 3.733761153189883*^9}, 
+   3.736231962629898*^9},ExpressionUUID->"fe8a3b4c-c0a9-4b89-bed7-\
+805640763952"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"i", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"j", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"angle", " ", "=", 
+    RowBox[{"Pi", "/", "4"}]}], ";"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{"Crossy", "=", 
+  RowBox[{
+   RowBox[{"Norm", "[", "i", "]"}], "*", 
+   RowBox[{"Norm", "[", "j", "]"}], "*", 
+   RowBox[{"Sin", "[", "angle", "]"}]}]}]}], "Input",
+ CellChangeTimes->{{3.733761163539071*^9, 3.733761382511133*^9}, {
+  3.733761438989222*^9, 3.7337614449966683`*^9}, {3.733761484378149*^9, 
+  3.7337615103534474`*^9}, {3.7362318485058837`*^9, 3.736231879059482*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"632aaf8e-e412-4fd5-bd21-6321e78fe984"],
+
+Cell[BoxData[
+ FractionBox["1", 
+  SqrtBox["2"]]], "Output",
+ CellChangeTimes->{{3.733761315853936*^9, 3.7337613828744707`*^9}, {
+  3.733761441792797*^9, 3.733761445359927*^9}, {3.7337614863188667`*^9, 
+  3.73376151069145*^9}, {3.7362318492961807`*^9, 3.7362319090310235`*^9}},
+ CellLabel->"Out[24]=",ExpressionUUID->"603bc6f1-8e17-4cc1-9709-0a5e64d5c80d"]
+}, Open  ]],
+
+Cell["\<\
+By changing the variable \[OpenCurlyQuote]angle\[CloseCurlyQuote] we see that \
+the cross product is largest when the angle goes against 180 degrees (we get \
+the largest span), however is we reach that limit the vectors are parallel \
+and the cross product is zero.\[LineSeparator]\
+\>", "Text",
+ CellChangeTimes->{{3.7337616754850197`*^9, 3.733761744859029*^9}, {
+  3.7362319216102114`*^9, 
+  3.7362319973593693`*^9}},ExpressionUUID->"93956fbf-4720-47d5-aa4b-\
+c19f3edadf11"]
+},
+WindowSize->{759, 553},
+WindowMargins->{{Automatic, 252}, {24, Automatic}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 187, 3, 34, "Text",ExpressionUUID->"8c410f4d-d30d-4727-961a-4b65cb43ba0a"],
+Cell[748, 25, 1475, 38, 124, "Input",ExpressionUUID->"a3df9fcf-9135-4cff-b923-88c210e00625"],
+Cell[2226, 65, 326, 7, 34, "Text",ExpressionUUID->"e8f42127-ada0-4995-8597-8722200cf00b"],
+Cell[2555, 74, 612, 12, 32, "Output",ExpressionUUID->"835188c4-4929-4b91-aa8e-36ca4bf56aa8"],
+Cell[3170, 88, 550, 10, 36, "Output",ExpressionUUID->"cc8f5a99-6dfb-4757-99eb-d8d70b5b8958"],
+Cell[3723, 100, 928, 17, 524, "Output",ExpressionUUID->"d68472e4-7f65-42ca-84fd-7eb9e8b52a55"],
+Cell[4654, 119, 203, 4, 28, "Input",ExpressionUUID->"715b8dd4-c1df-44a6-9961-c9b0b9dba60b"],
+Cell[4860, 125, 210, 3, 34, "Text",ExpressionUUID->"fe8a3b4c-c0a9-4b89-bed7-805640763952"],
+Cell[CellGroupData[{
+Cell[5095, 132, 859, 21, 86, "Input",ExpressionUUID->"632aaf8e-e412-4fd5-bd21-6321e78fe984"],
+Cell[5957, 155, 356, 6, 63, "Output",ExpressionUUID->"603bc6f1-8e17-4cc1-9709-0a5e64d5c80d"]
+}, Open  ]],
+Cell[6328, 164, 487, 9, 100, "Text",ExpressionUUID->"93956fbf-4720-47d5-aa4b-c19f3edadf11"]
+}
+]
+*)
+
